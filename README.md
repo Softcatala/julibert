@@ -82,7 +82,12 @@ Result:
 
 ```
 [
-{'sequence': "<s>El tribunal considera provat que els acusats van costar gairebé 24 milions d'euros.</s>", 'score': 0.33576342463493347, 'token': 14808 }, {'sequence': "<s>El tribunal considera provat que els acusats van invertir gairebé 24 milions d'euros.</s>", 'score': 0.06258589774370193, 'token': 14388 }, {'sequence': "<s>El tribunal considera provat que els acusats van pagar gairebé 24 milions d'euros.</s>", 'score': 0.05679689720273018, 'token': 4030}, {'sequence': "<s>El tribunal considera provat que els acusats van guanyar gairebé 24 milions d'euros.</s>", 'score': 0.03947337344288826, 'token': 3246}, {'sequence': "<s>El tribunal considera provat que els acusats van recaptar gairebé 24 milions d'euros.</s>", 'score': 0.035779498517513275, 'token': 14638}]
+{'sequence': "<s>El tribunal considera provat que els acusats van costar gairebé 24 milions d'euros.</s>", 'score': 0.33576342463493347, 'token': 14808 },
+{'sequence': "<s>El tribunal considera provat que els acusats van invertir gairebé 24 milions d'euros.</s>", 'score': 0.06258589774370193, 'token': 14388 },
+{'sequence': "<s>El tribunal considera provat que els acusats van pagar gairebé 24 milions d'euros.</s>", 'score': 0.05679689720273018, 'token': 4030}, 
+{'sequence': "<s>El tribunal considera provat que els acusats van guanyar gairebé 24 milions d'euros.</s>", 'score': 0.03947337344288826, 'token': 3246}, 
+{'sequence': "<s>El tribunal considera provat que els acusats van recaptar gairebé 24 milions d'euros.</s>", 'score': 0.035779498517513275, 'token': 14638}
+
 
 ```
 
