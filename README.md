@@ -52,8 +52,6 @@ https://www.softcatala.org/pub/softcatala/julivert/tokenizer-2020-10-11.zip
 From Linux command line:
 
 ```
-mkdir julivert
-cd julivert
 wget https://www.softcatala.org/pub/softcatala/julivert/roberta-catalan-20201011.zip
 unzip roberta-catalan-20201011.zip  -d julivert/
 
