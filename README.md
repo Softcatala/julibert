@@ -13,7 +13,7 @@ Google [has published](https://github.com/google-research/bert) two sets of mode
 * Single language models for English and Chineses
 * [Multilingual models](https://github.com/google-research/bert/blob/master/multilingual.md) where a single model covers 104 languages
 
-It has been prove the multilingual models perform poorly comparared to single language models. Serveral linguistics communities like French, Finish or Spainish have been working on creating the language specific models that outperform Google multilingual models.
+It has been prove the multilingual models perform poorly comparared to single language models. Serveral linguistics communities like [French](https://camembert-model.fr/), [Finish](https://arxiv.org/abs/1912.07076) or [Spanish](https://skimai.com/roberta-language-model-for-spanish/) have been working on creating the language specific models that outperform Google multilingual models.
 
 # Challenges for minority languages
 
