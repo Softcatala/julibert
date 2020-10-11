@@ -35,3 +35,39 @@ Publish a Catalan model at https://huggingface.co/models and make available to t
 ## Evalute its use as part of our grammar correction system
 
 We have the hypotesis that we can leverage on BERT alike models to improve LanguageTool grammar correction capatibities. Basically using BERT to understand if a word in a sentence is possibe in a BERT model.
+
+# Models
+
+* Corpus: Oscar Corpus (4.3G)
+* Model type: Roberta
+* Steps: 500000
+
+https://www.softcatala.org/pub/softcatala/julivert/roberta-catalan-20201011.zip
+
+# Usage
+
+```
+mkdir julivert
+cd julivert
+wget https://www.softcatala.org/pub/softcatala/julivert/roberta-catalan-20201011.zip
+unzip roberta-catalan-20201011.zip
+
+pip install transformers
+
+```
+
+
+```
+from transformers import pipeline
+
+fill_mask = pipeline(
+    "fill-mask",
+    model="julivert/",
+    tokenizer="julibert/"
+)
+
+fill_mask("    "El tribunal considera provat que els acusats van <mask> gairebé 24 milions d'euros.", .")
+
+```
+
+
