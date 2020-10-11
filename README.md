@@ -1,5 +1,7 @@
 # Introduction
 
+Welcome to project Julivert, Softcatalà playground of BERT models 
+
 BERT models were introduced by Google in 2018 and achieved state-of-the-art performance on a number of natural language understanding tasks:
 
 * GLUE (General Language Understanding Evaluation) task set (consisting of 9 tasks)
@@ -33,19 +35,3 @@ Publish a Catalan model at https://huggingface.co/models and make available to t
 ## Evalute its use as part of our grammar correction system
 
 We have the hypotesis that we can leverage on BERT alike models to improve LanguageTool grammar correction capatibities. Basically using BERT to understand if a word in a sentence is possibe in a BERT model.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
