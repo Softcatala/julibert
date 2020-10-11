@@ -1,6 +1,6 @@
 # Introduction
 
-Welcome to project Julivert, Softcatalà playground of BERT models 
+Welcome to project Julibert, Softcatalà playground of BERT models 
 
 BERT models were introduced by Google in 2018 and achieved state-of-the-art performance on a number of natural language understanding tasks:
 
@@ -42,22 +42,21 @@ We have the hypotesis that we can leverage on BERT alike models to improve Langu
 * Model type: Roberta
 * Steps: 500000
 
-https://www.softcatala.org/pub/softcatala/julivert/roberta-catalan-20201011.zip
+https://www.softcatala.org/pub/softcatala/julibert/roberta-catalan-20201011.zip
 
 Tokenizer model:
-https://www.softcatala.org/pub/softcatala/julivert/tokenizer-2020-10-11.zip 
+https://www.softcatala.org/pub/softcatala/julibert/tokenizer-2020-10-11.zip 
 
 # Usage
 
 From Linux command line:
 
 ```
-wget https://www.softcatala.org/pub/softcatala/julivert/roberta-catalan-20201011.zip
-unzip roberta-catalan-20201011.zip  -d julivert/
+wget https://www.softcatala.org/pub/softcatala/julibert/roberta-catalan-20201011.zip
+unzip roberta-catalan-20201011.zip  -d julibert/
 
-wget https://www.softcatala.org/pub/softcatala/julivert/tokenizer-2020-10-11.zip 
+wget https://www.softcatala.org/pub/softcatala/julibert/tokenizer-2020-10-11.zip 
 unzip tokenizer-2020-10-11.zip -d tokenizer/
-
 
 pip install transformers torch
 
@@ -70,7 +69,7 @@ from transformers import pipeline
 
 fill_mask = pipeline(
     "fill-mask",
-    model="julivert/",
+    model="julibert/",
     tokenizer="tokenizer/"
 )
 
