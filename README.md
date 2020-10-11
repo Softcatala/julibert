@@ -44,18 +44,28 @@ We have the hypotesis that we can leverage on BERT alike models to improve Langu
 
 https://www.softcatala.org/pub/softcatala/julivert/roberta-catalan-20201011.zip
 
+Tokenizer model:
+https://www.softcatala.org/pub/softcatala/julivert/tokenizer-2020-10-11.zip 
+
 # Usage
+
+From Linux command line:
 
 ```
 mkdir julivert
 cd julivert
 wget https://www.softcatala.org/pub/softcatala/julivert/roberta-catalan-20201011.zip
-unzip roberta-catalan-20201011.zip
+unzip roberta-catalan-20201011.zip  -d julivert/
 
-pip install transformers
+wget https://www.softcatala.org/pub/softcatala/julivert/tokenizer-2020-10-11.zip 
+unzip tokenizer-2020-10-11.zip -d tokenizer/
+
+
+pip install transformers torch
 
 ```
 
+From python 3:
 
 ```
 from transformers import pipeline
@@ -63,11 +73,22 @@ from transformers import pipeline
 fill_mask = pipeline(
     "fill-mask",
     model="julivert/",
-    tokenizer="julibert/"
+    tokenizer="tokenizer/"
 )
 
-fill_mask("    "El tribunal considera provat que els acusats van <mask> gairebé 24 milions d'euros.", .")
+predict = fill_mask("El tribunal considera provat que els acusats van <mask> gairebé 24 milions d'euros.")
+print(predict)
 
 ```
+
+Result:
+
+```
+[
+{'sequence': "<s>El tribunal considera provat que els acusats van costar gairebé 24 milions d'euros.</s>", 'score': 0.33576342463493347, 'token': 14808 }, {'sequence': "<s>El tribunal considera provat que els acusats van invertir gairebé 24 milions d'euros.</s>", 'score': 0.06258589774370193, 'token': 14388 }, {'sequence': "<s>El tribunal considera provat que els acusats van pagar gairebé 24 milions d'euros.</s>", 'score': 0.05679689720273018, 'token': 4030}, {'sequence': "<s>El tribunal considera provat que els acusats van guanyar gairebé 24 milions d'euros.</s>", 'score': 0.03947337344288826, 'token': 3246}, {'sequence': "<s>El tribunal considera provat que els acusats van recaptar gairebé 24 milions d'euros.</s>", 'score': 0.035779498517513275, 'token': 14638}]
+
+```
+
+
 
 
