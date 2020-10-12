@@ -38,8 +38,9 @@ We have the hypotesis that we can leverage on BERT alike models to improve Langu
 
 # Models
 
-* Corpus: Oscar Corpus (4.3G)
+* Corpus: Oscar Català Corpus (3,8G)
 * Model type: Roberta
+* Vocabulary size: 50265
 * Steps: 500000
 
 https://www.softcatala.org/pub/softcatala/julibert/roberta-catalan-20201011.zip
