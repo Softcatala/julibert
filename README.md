@@ -91,6 +91,10 @@ Result:
 
 ```
 
+# Contact
+
+Email address: Jordi Mas: jmas@softcatala.org
+
 
 
 
