@@ -38,6 +38,10 @@ We have the hypotesis that we can leverage on BERT alike models to improve Langu
 
 # Models
 
+We train the model using the (SpanBerta instrucctions)[https://skimai.com/roberta-language-model-for-spanish/]
+
+The scripts in Python are in the repository
+
 * Corpus: Oscar Català Corpus (3,8G)
 * Model type: Roberta
 * Vocabulary size: 50265
