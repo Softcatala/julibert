@@ -5,8 +5,8 @@ from transformers import pipeline
 
 fill_mask = pipeline(
     "fill-mask",
-    model="models/roberta/output/",
-    tokenizer="models/roberta/"
+    model="julibert/",
+    tokenizer="julibert/"
 )
 
 # The sun <mask>.

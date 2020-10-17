@@ -32,22 +32,34 @@ This project has two goals
 
 Publish a Catalan model at https://huggingface.co/models and make available to the NLP community.
 
-## Evalute its use as part of our grammar correction system
+## Evaluate its use as part of our grammar correction system
 
 We have the hypotesis that we can leverage on BERT alike models to improve LanguageTool grammar correction capatibities. Basically using BERT to understand if a word in a sentence is possibe in a BERT model.
 
 # Models
 
+## Roberta model
+
 We train the model using the [SpanBerta instrucctions](https://skimai.com/roberta-language-model-for-spanish/)
 
 The scripts in Python are in the repository
 
-* Corpus: Oscar Català Corpus (3,8G)
+* Corpus: Oscar Catalan Corpus (3,8G)
+* Tokenizer: ByteLevelBPETokenizer
 * Model type: Roberta
 * Vocabulary size: 50265
 * Steps: 500000
 
 https://www.softcatala.org/pub/softcatala/julibert/julibert-2020-10-11.zip
+
+## Calbert model
+
+A Catalan ALBERT (A Lite BERT). See: https://github.com/codegram/calbert
+
+* Corpus: Oscar Catalan Corpus (3,8G)
+* Tokenizer: SentencePiece
+* Model type: Alebert
+* Vocabulary size: 30000
 
 # Usage
 
@@ -94,7 +106,5 @@ Result:
 # Contact
 
 Email address: Jordi Mas: jmas@softcatala.org
-
-
 
 
