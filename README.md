@@ -38,7 +38,7 @@ We have the hypotesis that we can leverage on BERT alike models to improve Langu
 
 # Models
 
-We train the model using the (SpanBerta instrucctions)[https://skimai.com/roberta-language-model-for-spanish/]
+We train the model using the [SpanBerta instrucctions](https://skimai.com/roberta-language-model-for-spanish/)
 
 The scripts in Python are in the repository
 
@@ -47,27 +47,22 @@ The scripts in Python are in the repository
 * Vocabulary size: 50265
 * Steps: 500000
 
-https://www.softcatala.org/pub/softcatala/julibert/roberta-catalan-20201011.zip
-
-Tokenizer model:
-https://www.softcatala.org/pub/softcatala/julibert/tokenizer-2020-10-11.zip 
+https://www.softcatala.org/pub/softcatala/julibert/julibert-2020-10-11.zip
 
 # Usage
 
 From Linux command line:
 
 ```
-wget https://www.softcatala.org/pub/softcatala/julibert/roberta-catalan-20201011.zip
-unzip roberta-catalan-20201011.zip  -d julibert/
+wget https://www.softcatala.org/pub/softcatala/julibert/julibert-2020-11-10.zip
+unzip julibert-2020-11-10.zip 
 
-wget https://www.softcatala.org/pub/softcatala/julibert/tokenizer-2020-10-11.zip 
-unzip tokenizer-2020-10-11.zip -d tokenizer/
 
 pip install transformers torch
 
 ```
 
-From python 3:
+From Python 3:
 
 ```
 from transformers import pipeline
@@ -75,7 +70,7 @@ from transformers import pipeline
 fill_mask = pipeline(
     "fill-mask",
     model="julibert/",
-    tokenizer="tokenizer/"
+    tokenizer="julibert/"
 )
 
 predict = fill_mask("El tribunal considera provat que els acusats van <mask> gairebé 24 milions d'euros.")
